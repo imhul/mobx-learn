@@ -14,8 +14,4 @@ class Timer {
 
 const timerStore = new Timer()
 
-setInterval(() => {
-    timerStore.increaseTimer()
-}, 1000)
-
 export default timerStore

@@ -44,3 +44,11 @@ ul {
 li {
   padding-left: 10px;
 }
+
+.inline-block {
+  display: inline-block;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
