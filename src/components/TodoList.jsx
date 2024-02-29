@@ -1,6 +1,6 @@
 import React from 'react'
 import { observer } from "mobx-react-lite"
-import TodoView from './View'
+import TodoItem from './TodoItem'
 
 const TodoList = observer(({ store }) => {
   const onNewTodo = () => {
@@ -12,7 +12,7 @@ const TodoList = observer(({ store }) => {
       {store.report}
       <ul>
         {store.todos.map(
-          (todo, idx) => <TodoView todo={todo} key={idx} />
+          (todo, idx) => <TodoItem todo={todo} key={idx} />
         )}
       </ul>
       {store.pendingRequests > 0 ? <span>Loading...</span> : null}
